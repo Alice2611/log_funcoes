@@ -49,3 +49,62 @@ require_once "bibliotecaFuncoes.php";
 
 
 ////////////////////////////////////////////////////////////////
+
+// require_once "bibliotecaFuncoes.php";
+
+// use function saude\calcularImc;
+
+// echo "O IMC é: ", calcularImc(50, 1.60), "\n";
+
+// use function saude\valorIdealAgua;
+
+// echo "O valor ideal de Agua é: ", valorIdealAgua(50, 1.60), "\n";
+
+// use function saude\frequenciaCardiacaMaxima;
+
+// echo "A frequencia cardiaca maxima: ", frequenciaCardiacaMaxima(50, 16), "\n";
+
+// use function saude\converterLibrasParaQuilo;
+
+// echo "o resultado é: ", converterLibrasParaQuilo(50), "\n";
+
+// use function saude\calcularCaloriasBasais;
+
+// echo "o resultado é: ", calcularCaloriasBasais(50);
+
+
+$opcaoPrincipal = "";
+$opcaoConversao = "";
+
+while ($opcaoPrincipal != 4) {
+    echo "Menu Principal
+  1- Conversao
+  4- Sair\n";
+    $opcaoprincipal = readline(">>> ");
+
+
+    switch ($opcaoPrincipal) {
+        case 1:
+            while ($opcaoConversao=6) { //valor cotacao
+          echo "Menu Principal
+          1- Dolar para real
+          6- Sair\n";
+          $opcaoConversao = readline (">>>  ")
+          switch($opcaoConversao){
+            case 1:
+                $valor = readline  ("Digite o valor em dolar: ");
+                $cotacao = readline  ("Digite o valor da cotação atual do dolar: ");
+                echo "valor em real: ", dolarParaReal($valor, $cotacao)
+
+
+          }
+
+            }
+                echo "Opcao 1\n\n";
+        case 4:
+            echo "Saindo.....\n\n";
+        default:
+            echo "Opção invalida!\n\n";
+            break;
+    }
+}
